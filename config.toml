@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 baseURL = "https://example.com"
-title = "Arminius Sicherheitsdienst GmbH"
+title = "Arminius Sicherheitsdienst"
 
 ############################# Plugins ##############################
 [module]
@@ -56,8 +56,8 @@ logo_light = "images/logo.svg"
 logo_dark = "images/logo-dark.svg"
 copyright = "Copyright Arminius Sicherheitsdienst GmbH &copy;"
 # Meta data
-description = "Personal Portfolio"
-author = "Ibrahim"
+description = "Arminius Sicherheitsdienst GmbH"
+author = "Ibrahim Al Haibi"
 favicon = "images/favicon.png"
 google_analytics = "G-ABCDEFG123"
 
