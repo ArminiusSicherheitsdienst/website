@@ -144,3 +144,36 @@
     =============================== -->
 
 {{- partial "footer.html" . -}} {{ end }}
+<!-- =============================
+       Chatbot Section
+    =============================== -->
+<section class="chatbot-section" id="chatbot">
+  <div class="container">
+    <div class="chat-container">
+      <div class="chat-header">Chatbot</div>
+      <div class="chat-body" id="chatBody"></div>
+      <div class="chat-footer">
+        <input type="text" id="userInput" placeholder="Type a message">
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+    const chatBody = document.getElementById('chatBody');
+
+    function sendMessage() {
+        const userInput = document.getElementById('userInput').value;
+        const userMessage = document.createElement('div');
+        userMessage.textContent = userInput;
+        chatBody.appendChild(userMessage);
+
+        // Logik für die Nachricht an den Server und Empfang der Antwort hinzufügen
+        const botResponse = document.createElement('div');
+        botResponse.textContent = 'This is a bot response';
+        chatBody.appendChild(botResponse);
+
+        document.getElementById('userInput').value = '';
+    }
+</script>
